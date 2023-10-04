@@ -21,7 +21,7 @@ int main()
 
   // boolean type
      _Bool bl = 1;
-     printf("\n Boolean value:%d", bl);
+     printf("\nBoolean value:%d", bl);
     
  
 
