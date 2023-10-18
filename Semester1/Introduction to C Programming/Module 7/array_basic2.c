@@ -26,6 +26,7 @@ int main()
     {
         printf("%d ", arr2[i]);
     }
+    printf("\nGarbage value: %d ", arr2[6]);
 
     // Important Question
     // how to initialize entire array with specified elements accept zero.
