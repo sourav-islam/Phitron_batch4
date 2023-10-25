@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "enabled",
     "workbench.startupEditor": "none",
     "files.associations": {
-        "string.h": "c"
+        "string.h": "c",
+        "stdio.h": "c"
     }
 }
