@@ -2,10 +2,11 @@
 int main()
 {
     
-    int n, s,k;
+    int n;
     scanf("%d", &n);
-    s = n-1, k = 1;
-    for (int i = 1; i <= 2*n -1; i++)
+
+    int s = n-1, k = 1;
+    for (int i = 1; i <= 2*n; i++)
     {
         for (int j = 1; j <= s; j++)
         {
@@ -15,21 +16,23 @@ int main()
         {
             printf("*");
         }
-
-        printf("\n"); 
-
-        if (i <= n-1)
+        
+        if (i < 2*n)
         {
-            s--, k+= 2;
+            printf("\n");
         }
-       else 
+        
+        if (i < n)
         {
-            s++, k -= 2;
+            s--; k += 2;
         }
-       
+        if(i > n)
+        {
+            s++; k -= 2;
+        }
         
         
     }
-    
+     
     return 0;
 }
