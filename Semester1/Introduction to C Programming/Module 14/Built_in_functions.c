@@ -14,5 +14,25 @@ int main()
     printf("floor value: %d\n",f);
     printf("round value: %d\n",r);
     //printf("round value: %d\n",round(x)); // ai vabe print korle round(x) er value 0 ase.variable a nite hobe.
+    
+   
+/* 
+   int x;
+   scanf("%d",&x);
+   double ans = sqrt(x);  // sqrt double nite hobe
+   printf("%.2lf\n",ans);
+    */
+
+  /*  double a,b;
+   scanf("%lf %lf", &a, &b);
+   double ans = pow(a,b);
+   printf("%lf\n",ans);
+ */
+
+/* int p;
+scanf("%d",&p);
+int ans = abs(p);
+printf("%d\n",ans);
+ */
     return 0;
 }

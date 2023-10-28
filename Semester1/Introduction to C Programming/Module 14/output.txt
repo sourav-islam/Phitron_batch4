@@ -1,3 +1,2 @@
-ceil value: 4
-floor value: 3
-round value: 4
+address of s in main() fuc.: 000000B31FFFF8BC
+address of s in scope() fuc.: 000000B31FFFF87C
