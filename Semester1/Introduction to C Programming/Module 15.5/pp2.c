@@ -1,7 +1,7 @@
 #include <stdio.h>
-int my_len(char s)
+int my_len(char s[])
 {    int count = 0;
-    for (int i = 1; i != '\0'; i++)
+    for (int i = 0; s[i] != '\0'; i++)
     {
         count++;
     }

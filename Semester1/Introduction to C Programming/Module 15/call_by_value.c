@@ -3,7 +3,7 @@
 void fun(int x)
 {
      x = 30;
-    printf(" fun x er address: %p\n", x);
+    printf(" fun x: %d er address: %p\n",x, &x);
 }
 
 int main()
@@ -11,6 +11,6 @@ int main()
     
     int x = 20;
     fun(x); 
-    printf(" main x er address: %p\n", x);
+    printf(" main x: %d er address: %p\n",x, &x);
     return 0;
 }
