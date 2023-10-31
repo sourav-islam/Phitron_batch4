@@ -1,4 +1,4 @@
-#include <stdio.h>
+/* #include <stdio.h>
 
 // Define a structure to represent an interval
 struct Interval {
@@ -43,5 +43,26 @@ int main() {
         printf("Intersection: [%d, %d]\n", intersection.start, intersection.end);
     }
 
+    return 0;
+}
+ */
+
+#include<stdio.h>
+int main()
+{
+    
+    int s1,e1,s2,e2;
+    scanf("%d %d %d %d", &s1, &e1, &s2, &e2);
+    if (e1 < s2 || e2 < s1)
+    {
+        printf("-1");
+    }
+    else
+    {
+        int s_max = s1 > s2 ? s1 : s2;
+        int e_min = e1 < e2 ? e1 : e2;
+        printf("%d %d", s_max, e_min);
+    }
+    
     return 0;
 }
