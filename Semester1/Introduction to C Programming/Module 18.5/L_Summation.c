@@ -1,12 +1,15 @@
 #include<stdio.h>
 
-int sum ( long long a[], int n, int i)
+long long sum ( long long a[], int n, int i)
 {
     if( i == n ) return 0;
-    
-  long long s =  sum(a, n, i+1);
-    
-    return s + a[i];
+     if (n>=1 && n <=1000)
+     {
+          long long s =  sum(a, n, i+1);
+   // printf("%lld %lld\n", s, s+ a[i]);
+          return s + a[i];
+     }
+ 
 }
 int main()
 {
