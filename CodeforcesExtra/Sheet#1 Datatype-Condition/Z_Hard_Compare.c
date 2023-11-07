@@ -3,35 +3,30 @@
 int main()
 {
     
-   double a, b, c, d;
-    scanf("%ld %ld %ld %ld", &a, &b, &c, &d); 
-    double pow1 = pow(a,b);
-    double pow2 = pow(c,d);
+   int a, c;
+   double b,d;
 
-    // printf("%lf", pow1);
-    // printf("%lf", pow2);
-    if (pow1 > pow2) 
+    scanf("%d %lf %d %lf", &a, &b, &c, &d); 
+ 
+ //(pow(a,b) > pow(c,d))    cant use pow because a^b greater long long type
+ 
+  // a^b = e^(b * ln(a)) =  exp(b * log(a));  // 
+
+      double p1 =exp(b * log(a));
+      double p2 =exp(d * log(c));
+   //printf("%.0lf %.0lf\n", p1, p2);   
+    if (p1 <= p2) 
     {
-       printf("YES");
+       printf("NO");
     }
     else
          {
-            printf("NO");
+            printf("YES");
          }
+      
     
-    // if (pow(a,b) > pow(c,d))
-    // {
-    //     printf("YES");
-    // }
-    // else if (pow(a,b) == pow(c,d))
-    // {
-    //     printf("NO");
-    // }
-    
-    // else
-    //    {
-    //     printf("NO");
-    //    } 
-    
+ 
+   
+
     return 0;
 }
