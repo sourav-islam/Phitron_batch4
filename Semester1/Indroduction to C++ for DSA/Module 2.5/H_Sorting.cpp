@@ -1,12 +1,11 @@
-#include<iostream>
-#include<utility>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
     int n;
     cin >> n;
     int ar[n]; // in c++ 11 array size can't variable size.so get Compilation error
-  /*   for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         cin >> ar[i];
     }
@@ -26,7 +25,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cout << ar[i] << " ";
-    } */
+    }
     
     
     

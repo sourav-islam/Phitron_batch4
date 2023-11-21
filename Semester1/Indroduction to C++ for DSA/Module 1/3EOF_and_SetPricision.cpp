@@ -21,6 +21,6 @@ int main(){
     // Set Precision #include < iomanip>
      double d = 12.344354553;
     // printf("%.3lf\n", d);
-    cout << fixed << setprecision(3) << d << endl; // sobar prothom print hocce, i don't know.
+    cout << Fixed << setprecision(3) << d << endl; // sobar prothom print hocce, i don't know.
     return 0;
 }
