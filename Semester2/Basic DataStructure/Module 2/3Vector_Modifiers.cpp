@@ -48,6 +48,7 @@ int main()
     /*  vector<int>::iterator it;
      it = find(v.begin(), v.end(), 5); // 5 paile 5 dibe na paile garbage dibe
      cout << *it << endl; */
+     
     auto it = find(v.begin(), v.end(), 15);
     if (it != v.end())
         cout << "found";
