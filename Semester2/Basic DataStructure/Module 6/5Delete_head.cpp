@@ -69,6 +69,7 @@ void delete_head(Node *&head)
 {
     Node *deleteNode = head;
     head = head->next;
+    delete deleteNode;
     cout << "*Deleted head " << endl;
 }
 
