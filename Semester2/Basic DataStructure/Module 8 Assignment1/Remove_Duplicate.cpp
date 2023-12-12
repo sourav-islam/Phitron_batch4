@@ -26,20 +26,30 @@ void insert_list(Node *&head, int val)
     }
     tmp->next = newNode;
 }
-void delete_node(Node *&i, Node *&j)
+void delete_node(Node *i, Node *&j)
 {
     Node *k = i;
-    while (k->next != j)
+    //  if (k->next == j)
+    //  {
+    //      Node *deleteNode = j;
+    //      k->next = j->next;
+    //      j = k->next;
+    //      delete deleteNode;
+    //  }
+    // else
     {
-        k = k->next;
-    }
+        while (k->next != j)
+        {
+            k = k->next;
+        }
 
-    Node *deleteNode = j;
-    k->next = j->next;
-    j = k->next;
-    delete deleteNode;
+        Node *deleteNode = j;
+        k->next = j->next;
+        j = k->next;
+        delete deleteNode;
+    }
 }
-void remove_duplicate(Node *&head)
+void remove_duplicate(Node *head)
 {
     Node *tmp = head;
     for (Node *i = tmp; i->next != NULL; i = i->next)
@@ -113,20 +123,21 @@ void insert_list(Node *&head, int val)
     tmp->next = newNode;
 }
 
-void delete_node(Node *&i, Node *&j)
+void delete_node(Node *i, Node *j)
 {
+    Node *deleteNode = j;
     i->next = j->next;
     delete j;
     j = i->next;
 }
 
-void remove_duplicate(Node *&head)
+void remove_duplicate(Node *head)
 {
     Node *tmp = head;
     for (Node *i = tmp; i != NULL; i = i->next)
     {
         Node *pre = i;
-        for (Node *j = i->next; j != NULL; j = pre->next)
+        for (Node *j = pre->next; j != NULL; j = pre->next)
         {
 
             if (i->val == j->val)
