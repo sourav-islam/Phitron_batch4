@@ -58,28 +58,35 @@ int size(Node *head)
     }
     return ctn;
 }
-void delete_head(Node *&head)
+void delete_head(Node *&head, Node *tail)
 {
-    if (head == NULL)
-    {
-        cout << "head is NULL" << endl;
-        return;
-    }
+
     Node *deleteNode = head;
     head = head->next;
-    head->prev = NULL;
     delete deleteNode;
+    if (head == NULL)
+    {
+        tail = NULL;
+        return;
+    }
+    head->prev = NULL;
 }
-void delete_tail(Node *&tail)
+void delete_tail(Node *&head, Node *&tail)
 {
     Node *deleteNode = tail;
     tail = tail->prev;
-    tail->next = NULL;
     delete deleteNode;
+    if (tail == NULL)
+    {
+        head = NULL;
+        return;
+    }
+    tail->next = NULL;
 }
 int main()
 {
     Node *head = new Node(10);
+
     Node *a = new Node(20);
     Node *b = new Node(30);
     Node *c = new Node(40);
@@ -100,7 +107,7 @@ int main()
     cin >> pos;
     if (pos == 0)
     {
-        delete_head(head);
+        delete_head(head, tail);
     }
     else if (pos >= size(head))
     {
@@ -108,7 +115,7 @@ int main()
     }
     else if (pos == size(head) - 1)
     {
-        delete_tail(tail);
+        delete_tail(head, tail);
     }
     else
     {

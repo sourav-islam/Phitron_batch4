@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    stack<int> st;
+    /*  st.push(10);
+     st.push(20);
+     st.push(30);
+     cout << st.top() << endl;
+     if (!st.empty())
+     {
+         st.pop();
+         cout << st.top() << endl;
+     }
+     cout << st.size() << endl;
+     */
+
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        int x;
+        cin >> x;
+        st.push(x);
+    }
+    while (!st.empty())
+    {
+        cout << st.top() << endl;
+        st.pop();
+    }
+    cout << st.top() << endl; // segmentation fault cause stack already empty
+    return 0;
+}
