@@ -6,6 +6,7 @@
         "stdio.h": "c",
         "iostream": "cpp",
         "ostream": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "algorithm": "cpp"
     }
 }
