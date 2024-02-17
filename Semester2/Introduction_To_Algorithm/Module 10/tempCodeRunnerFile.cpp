@@ -1,0 +1,1 @@
+ cout << dsu_find_pathC(0) << dsu_find_pathC(1) << dsu_find_pathC(2) << dsu_find_pathC(3) << endl;
