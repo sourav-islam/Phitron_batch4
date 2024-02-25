@@ -1,0 +1,7 @@
+.cph/
+.vscode/
+*.txt
+!contest_links.txt
+!problem_links.txt
+*.exe
+*.bin
