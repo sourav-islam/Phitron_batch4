@@ -1,2 +1,8 @@
 https://www.hackerrank.com/contests/phitron-monthly-programming-contest-a-batch-04-a-feb-2024/challenges
 solve:https://github.com/Rahat-Khan-Pathan/Phitron-Monthly-Programming-Contest-Batch-04-Feb-2024
+Special Traning for XPSC:
+1.Day1:video_link:https://us06web.zoom.us/rec/share/jiZf71hr4O_d8GthcAYSVgO8dYrK2itiUym2PAtyqG25_Nm6Ma89y0kmHtidwdku.8ejoAix3AAlTP5Hl
+pass:0h93b!zG
+2.Day2: video_link:https://us06web.zoom.us/rec/play/kVs4-6LfPtRN26oAngQ0k_TqjMbXcyFQFx_ySRpQRrEWQowKLETHSmLhniWN96GCEfVuHNkP-J2OnGU9.iIzR06NPc575Oo_e?hasValidToken=false&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus06web.zoom.us%2Frec%2Fshare%2FgtVinoCGxjyBWZ-n6-4vM0yAYFnC1dAP-SfpFpZR8mOjRwnkTdnsPimZMgczIV-l.Vjt_ErX-NZk4u1fa%3Ffbclid%3DIwAR2Di03Kg97IzxyPjvSXgPctvieIuLkqnr2xJpU8cNcA696ZV14x1yOM76o
+password:W#1oYfgm
+3.Day3: Mock_Contest_link:https://www.hackerrank.com/xpsc-mock-contest-a-batch-04
